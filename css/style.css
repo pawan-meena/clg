@@ -219,7 +219,10 @@ font-weight: 500;
     font-size: 20px;
     line-height: 1.5em;
 }
-
+.whysub{
+  padding: 4px 4px 14px 4px;
+  box-shadow: 4px 4px 20px 10px #bda0a04d;
+}
 /* hero media query */
 @media (max-width:600px) {
 
@@ -310,8 +313,9 @@ font-size: 20px;
     }
 
     .mbtnget{    
-    position: absolute;
-    right: 20%;text-decoration: none;
+      position: absolute;
+      right: 24%;text-decoration: none;
+      display: none;
       padding-right: 20px;
       padding: 10px;
       padding-left: 20px;
@@ -326,3 +330,11 @@ font-size: 20px;
           
           
     }
+
+    @media (max-width:600px) {
+      .mbtnget{ 
+        display: block;   
+      }
+    }
+
+ 
