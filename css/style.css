@@ -11,7 +11,8 @@
   justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    max-width: 1230px;
+    top: 0px;
+    position: sticky;
     margin-right: auto;
     margin-left: auto;
 }
@@ -285,4 +286,9 @@ font-size: 20px;
     .footerlink{
     padding: 0px 0px 0px 8px;
       font-size: 12px;
+    }
+
+    .socaila{
+      text-decoration: none;
+      padding: 0px 4px;
     }
