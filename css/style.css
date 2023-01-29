@@ -29,7 +29,7 @@
   display: inline-block;
     font-size: 28px;
     color: #626a72;
-    padding: 10px 10px 10px 10px;
+
     font-weight: bold;
 }
 
@@ -146,7 +146,7 @@ font-weight: 500;
 
 .section.light-color-gradient {
    padding: 40px 0px;
-    height:fit-content;justify-content: space-between;
+    height:calc(100vh - 64px);justify-content: space-between;
     position: relative;
     background-color: #f5f6f7;
     background-image: linear-gradient(54deg, rgba(255, 131, 122, 0.25), rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, rgba(239, 152, 207, 0.25), rgba(239, 152, 207, 0) 36%);
@@ -224,6 +224,7 @@ font-weight: 500;
 @media (max-width:600px) {
 
 
+
     .grid-sec{
         grid-template-rows: auto;
         grid-template-columns: 1fr;
@@ -236,7 +237,7 @@ font-weight: 500;
     }
     .section.light-color-gradient {
    
-      height:100vh;}
+    height:calc(100vh - 64px)}
 
 }
 
@@ -291,4 +292,37 @@ font-size: 20px;
     .socaila{
       text-decoration: none;
       padding: 0px 4px;
+    }
+
+    .btnget{
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 8px;
+      background-color: #1d1d1d;
+      box-shadow: 0 2px 0 0 #f5f6f7;
+      -webkit-transition: box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, -webkit-transform 200ms ease;
+      transition: box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, -webkit-transform 200ms ease;
+      transition: box-shadow 200ms ease, background-color 200ms ease, transform 200ms ease, color 200ms ease;
+      transition: box-shadow 200ms ease, background-color 200ms ease, transform 200ms ease, color 200ms ease, -webkit-transform 200ms ease;
+      color: #fff !important;
+          
+          
+    }
+
+    .mbtnget{    
+    position: absolute;
+    right: 20%;text-decoration: none;
+      padding-right: 20px;
+      padding: 10px;
+      padding-left: 20px;
+      border-radius: 8px;
+      background-color: #1d1d1d;
+      box-shadow: 0 2px 0 0 #f5f6f7;
+      -webkit-transition: box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, -webkit-transform 200ms ease;
+      transition: box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, -webkit-transform 200ms ease;
+      transition: box-shadow 200ms ease, background-color 200ms ease, transform 200ms ease, color 200ms ease;
+      transition: box-shadow 200ms ease, background-color 200ms ease, transform 200ms ease, color 200ms ease, -webkit-transform 200ms ease;
+      color: #fff !important;
+          
+          
     }
