@@ -55,6 +55,41 @@
     </div>
 </div>
     </div>
+    <button id="scroll-to-section">Go to section</button>
+
+<div id="section">
+  <h1>This is the section</h1>
+  <p>Some content here</p>
+</div>
+
+<style>
+  #section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #section h1 {
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+</style>
+
+<script>
+  const scrollToSection = document.getElementById("scroll-to-section");
+  const section = document.getElementById("section");
+
+  scrollToSection.addEventListener("click", function() {
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: "smooth"
+    });
+
+    setTimeout(function() {
+      section.querySelector("h1").style.opacity = 1;
+    }, 500);
+  });
+</script>
 
 <div class="section2">
 <div class="imgh">
